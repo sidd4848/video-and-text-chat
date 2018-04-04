@@ -1,0 +1,85 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>video chat</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript">
+<!--
+$('#memberModal').modal('show');
+//-->
+</script>
+</head>
+<body>
+  <ul class="nav nav-pills justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">service</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">about</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">lauda lasoon</a>
+    </li>
+  </ul>
+
+<!-- Button trigger modal -->
+<div id="button" class="row">
+  <div class="col" style="border-right:double;">
+    <img class="leftimage" src="http://pluspng.com/img-png/png-touch-intuitive-interface-400.png">
+  </div>
+  <div class="col">
+    <img class="rightimage" src="https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/homepage_2/min/homepageGraphics-1.png">
+  </div>
+<button type="button" class="btn btn-primary" data-toggle="modal" id="chatlogin" data-target="#exampleModal" id="hideit">
+  Get to Chat
+</button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Private Chat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+        <label>generating Your ID:</label><br>
+        <textarea id="yourId"></textarea><br>
+      </div>
+        <div class="form-group">
+        <label>Other ID:</label><br>
+        <textarea id="otherId"></textarea>
+      </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="connect" >Connect</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chat" id="chat">
+<div id="videoframe">
+</div>
+<div id="chatbox">
+  <label>ENTER messages:</label>
+  <textarea id="yourMessage"></textarea>
+  <button id="send">send</button>
+  <pre id="messages"></pre>
+</div>
+</div>
+  <script src="bundle.js" charset="utf-8"></script>
+</body>
+</html>
